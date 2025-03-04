@@ -31,3 +31,25 @@ cd travel-planner
 ```bash
 pip install streamlit langchain langchain-google-genai
 ```
+
+### Set up API Key
+Replace `Your API Key` in `app.py` with your actual Google Generative AI API key:
+```python
+api_key = "Your API Key"
+```
+
+### Running the App
+```bash
+streamlit run app.py
+```
+
+### Usage
+
+- Enter the source city in the "From" field.
+- Enter the destination city in the "To" field.
+- Click the "Plan My Trip" button.
+- The app will analyze travel options and display:
+  - The cheapest and fastest travel choices.
+  - Detailed breakdowns of each transportation mode.
+  - Important notes on cost variations and travel conditions.
+
